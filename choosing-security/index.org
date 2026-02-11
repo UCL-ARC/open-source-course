@@ -1,0 +1,144 @@
+#+COMMENT: (setq org-reveal-ignore-speaker-notes t)
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_EXTRA_CSS: personal.css
+#+REVEAL_MARGIN: -100
+#+REVEAL_MIN_SCALE: 0.1
+#+REVEAL_MAX_SCALE: 2.0
+#+REVEAL_HEADING1_SIZE: 10
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1>
+#+Title: Choosing tools wisely @@html:<br>@@ managing security & dependencies 
+#+Email: @dpshelio
+#+OPTIONS: toc:nil num:0 timestamp:nil
+#+MACRO: imglnk @@html:<a href="$1"><img width="400px" src="$2"></a>@@
+#+EXCLUDE_TAGS: hide
+#+REVEAL_THEME: dracula
+* Choosing (Open Source) tools
+
+🔬 Joanna needs to analyse some images from a microscope in her lab.
+
+She finds five different tools that provide the features she needs for her analysis. How to choose from them?
+
+
+** Are you allowed to use it? (Licence)
+
+Publicly available code doesn't mean you are allowed to use it.
+
+#+BEGIN_NOTES
+copyright doesn't allow you to copy an unlicensed work, and therefore, running it 
+#+END_NOTES
+
+*** Where to find the licence?
+
+- Files such as =LICENSE=, =COPYING=, =COPYRIGHT= (repositories highlight those; e.g.,  [[https://github.com/sunpy/sunpy/][on github]],  [[https://gitlab.com/redhat/centos-stream/tests/gcc][on gitlab]]).
+- Comments on the top of the source code.
+  #+BEGIN_SRC python
+    # SPDX-FileCopyrightText: 2026 project-x contributors
+    # SPDX-License-Identifier: MIT-0
+  #+END_SRC
+- Through an acceptance menu when installing it.
+
+
+
+** Can you use it? (Requirements)
+
+- Operating System (e.g., only available on Android)
+- Hardware requirements (e.g., needs a GPU)
+- Installation permissions (e.g., on a university administrated machine)
+- You have the required dependencies
+
+** Is it documented?
+
+- Does the documentation exists?
+- Is it understandable? ([[https://diataxis.fr/][Diátaxis]])
+- Is the documentation up to date?
+
+** Is the software maintained?
+
+- Are versions released? (do they follow a pattern?)
+- Is actively developed?
+  - latest commits  (e.g., on GitHub: [[https://github.com/numpy/numpy/commits/main/][numpy history]], [[https://github.com/numpy/numpy/pulse][pulse]])
+  - issue tracker
+- How many people are involved? (e.g., on GitHub: [[https://github.com/numpy/numpy/graphs/contributors][contributors graph]])
+
+** Can you get help?
+
+- Do they have a forum/chat to answer questions? (e.g., [[https://napari.org/stable/][napari forum and chat]])
+- Are they welcoming? (e.g., [[https://book.the-turing-way.org/community-handbook/coc/][The Turing way's code of conduct]])
+- Size of the user community 
+
+#+BEGIN_NOTES
+Size of community is hard to estimate, but you can see whether there's
+only one person answering everything or there are a few.
+#+END_NOTES
+  
+** Is the software correct? (tested)
+
+- What measurements are taken to confirm correctness? (e.g., [[https://github.com/tidyverse/dplyr/tree/main/tests/testthat][dplyr's tests]])
+- What's the coverage? (e.g., [[https://app.codecov.io/gh/tidyverse/dplyr][dplyr's coverage]])
+
+#+BEGIN_NOTES
+test:  test-utils.R
+coverage: R/all-equal.R
+#+END_NOTES
+  
+** Is it fast? (performance)
+
+- Do they provide some examples? 
+- Do they compare with others? (e.g., [[https://github.com/astral-sh/uv][uv comparisson]])
+
+** As a developer:
+
+- Language / readability
+- Contributions accepted
+- Open developed (decision making)
+
+* Security
+
+** Do you trust it?
+
+- The site from where you download it?
+- =SHA='s to check that is what they say (e.g., [[https://www.gimp.org/downloads/][GIMP downloads page]])
+  #+BEGIN_SRC
+    sha256sum package.py 
+  #+END_SRC
+
+** Careful!
+
+- download and install instructions
+  #+BEGIN_SRC bash
+    /bin/bash -c "$(curl -fsSL https://software.com/install.sh)"
+  #+END_SRC
+- asked to install it as admin  (e.g., =sudo= )
+
+** Isolation
+
+- Virtual Machine
+- Containers
+
+* Dependencies
+
+** Find them
+
+- dependencies requirements
+- rabbit hole:  [[https://github.com/trailofbits/it-depends][it-depends]]
+
+** As a developer
+
+- Licenses: are they compatible? [[https://licensecheck.io/compatibility-matrix][compatibility matrix]]
+- Version pinning. Specify which versions are required in your software
+- Run tests with development versions of your dependencies
+
+
+
+* ARC
+
+- [[https://www.ucl.ac.uk/advanced-research-computing/platforms-and-services][Services]] (software, data, infrastructure)
+- [[https://www.ucl.ac.uk/advanced-research-computing/community-events/drop-sessions][Help]] (drop-ins, support, documentation)
+- [[https://www.ucl.ac.uk/advanced-research-computing/digital-research-community-events-support][Community]] (Slack, TechSocials)
+- [[https://www.ucl.ac.uk/advanced-research-computing/education][Education]]
+
+** Open Source Programme Office
+
+- Advocate for Open Source
+- Support activities (hackathons, [[https://github-pages.ucl.ac.uk/linux/][Linux User Group]])
+- metrics
