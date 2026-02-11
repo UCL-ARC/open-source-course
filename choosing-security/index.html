@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Choosing tools wisely <br> managing security &amp; dependencies</title>
+<meta name="author" content="David Pérez-Suárez"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/dracula.css" id="theme"/>
+
+<link rel="stylesheet" href="personal.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>Choosing tools wisely <br> managing security &amp; dependencies</h1>
+</section>
+<section>
+<section id="slide-org91e66a9">
+<h2 id="org91e66a9">Choosing (Open Source) tools</h2>
+<p>
+🔬 Joanna needs to analyse some images from a microscope in her lab.
+</p>
+
+<p>
+She finds five different tools that provide the features she needs for her analysis. How to choose from them?
+</p>
+</section>
+<section id="slide-orgbed1841">
+<h3 id="orgbed1841">Are you allowed to use it? (Licence)</h3>
+<p>
+Publicly available code doesn't mean you are allowed to use it.
+</p>
+
+<aside class="notes">
+<p>
+copyright doesn't allow you to copy an unlicensed work, and therefore, running it 
+</p>
+
+</aside>
+</section>
+<section id="slide-orgff54ba9">
+<h4 id="orgff54ba9">Where to find the licence?</h4>
+<ul>
+<li>Files such as <code>LICENSE</code>, <code>COPYING</code>, <code>COPYRIGHT</code> (repositories highlight those; e.g.,  <a href="https://github.com/sunpy/sunpy/">on github</a>,  <a href="https://gitlab.com/redhat/centos-stream/tests/gcc">on gitlab</a>).</li>
+<li><p>
+Comments on the top of the source code.
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-python"   ><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">SPDX-FileCopyrightText: 2026 project-x contributors</span>
+<span style="color: #73d216;"># </span><span style="color: #73d216;">SPDX-License-Identifier: MIT-0</span>
+</code></pre>
+</div></li>
+<li>Through an acceptance menu when installing it.</li>
+
+</ul>
+</section>
+<section id="slide-org523b05c">
+<h3 id="org523b05c">Can you use it? (Requirements)</h3>
+<ul>
+<li>Operating System (e.g., only available on Android)</li>
+<li>Hardware requirements (e.g., needs a GPU)</li>
+<li>Installation permissions (e.g., on a university administrated machine)</li>
+<li>You have the required dependencies</li>
+
+</ul>
+</section>
+<section id="slide-org55fbda5">
+<h3 id="org55fbda5">Is it documented?</h3>
+<ul>
+<li>Does the documentation exists?</li>
+<li>Is it understandable? (<a href="https://diataxis.fr/">Diátaxis</a>)</li>
+<li>Is the documentation up to date?</li>
+
+</ul>
+</section>
+<section id="slide-org3dee483">
+<h3 id="org3dee483">Is the software maintained?</h3>
+<ul>
+<li>Are versions released? (do they follow a pattern?)</li>
+<li>Is actively developed?
+<ul>
+<li>latest commits  (e.g., on GitHub: <a href="https://github.com/numpy/numpy/commits/main/">numpy history</a>, <a href="https://github.com/numpy/numpy/pulse">pulse</a>)</li>
+<li>issue tracker</li>
+
+</ul></li>
+<li>How many people are involved? (e.g., on GitHub: <a href="https://github.com/numpy/numpy/graphs/contributors">contributors graph</a>)</li>
+
+</ul>
+</section>
+<section id="slide-org4773d1c">
+<h3 id="org4773d1c">Can you get help?</h3>
+<ul>
+<li>Do they have a forum/chat to answer questions? (e.g., <a href="https://napari.org/stable/">napari forum and chat</a>)</li>
+<li>Are they welcoming? (e.g., <a href="https://book.the-turing-way.org/community-handbook/coc/">The Turing way's code of conduct</a>)</li>
+<li>Size of the user community</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Size of community is hard to estimate, but you can see whether there's
+only one person answering everything or there are a few.
+</p>
+
+</aside>
+</section>
+<section id="slide-org8766856">
+<h3 id="org8766856">Is the software correct? (tested)</h3>
+<ul>
+<li>What measurements are taken to confirm correctness? (e.g., <a href="https://github.com/tidyverse/dplyr/tree/main/tests/testthat">dplyr's tests</a>)</li>
+<li>What's the coverage? (e.g., <a href="https://app.codecov.io/gh/tidyverse/dplyr">dplyr's coverage</a>)</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+test:  test-utils.R
+coverage: R/all-equal.R
+</p>
+
+</aside>
+</section>
+<section id="slide-org3259eea">
+<h3 id="org3259eea">Is it fast? (performance)</h3>
+<ul>
+<li>Do they provide some examples?</li>
+<li>Do they compare with others? (e.g., <a href="https://github.com/astral-sh/uv">uv comparisson</a>)</li>
+
+</ul>
+</section>
+<section id="slide-orgfc2db53">
+<h3 id="orgfc2db53">As a developer:</h3>
+<ul>
+<li>Language / readability</li>
+<li>Contributions accepted</li>
+<li>Open developed (decision making)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf93a321">
+<h2 id="orgf93a321">Security</h2>
+<div class="outline-text-2" id="text-orgf93a321">
+</div>
+</section>
+<section id="slide-orgaf7a13a">
+<h3 id="orgaf7a13a">Do you trust it?</h3>
+<ul>
+<li>The site from where you download it?</li>
+<li><p>
+<code>SHA</code>'s to check that is what they say (e.g., <a href="https://www.gimp.org/downloads/">GIMP downloads page</a>)
+</p>
+<pre  class="example" >
+sha256sum package.py 
+</pre></li>
+
+</ul>
+</section>
+<section id="slide-org9a2e0c2">
+<h3 id="org9a2e0c2">Careful!</h3>
+<ul>
+<li><p>
+download and install instructions
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-bash"   ><code trim>/bin/bash -c <span style="color: #e9b96e;">"$(curl -fsSL https://raw.githubusercontent.com/software/install/HEAD/install.sh)"</span>
+</code></pre>
+</div></li>
+<li>asked to install it as admin  (e.g., <code>sudo</code> )</li>
+
+</ul>
+</section>
+<section id="slide-org1751308">
+<h3 id="org1751308">Isolation</h3>
+<ul>
+<li>Virtual Machine</li>
+<li>Containers</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org571d47c">
+<h2 id="org571d47c">Dependencies</h2>
+<div class="outline-text-2" id="text-org571d47c">
+</div>
+</section>
+<section id="slide-org8b65298">
+<h3 id="org8b65298">Find them</h3>
+<ul>
+<li>dependencies requirements</li>
+<li>rabbit hole:  <a href="https://github.com/trailofbits/it-depends">it-depends</a></li>
+
+</ul>
+</section>
+<section id="slide-orgc51dc9c">
+<h3 id="orgc51dc9c">As a developer</h3>
+<ul>
+<li>Licenses: are they compatible? <a href="https://licensecheck.io/compatibility-matrix">compatibility matrix</a></li>
+<li>Version pinning. Specify which versions are required in your software</li>
+<li>Run tests with development versions of your dependencies</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb0c32bb">
+<h2 id="orgb0c32bb">ARC</h2>
+<ul>
+<li><a href="https://www.ucl.ac.uk/advanced-research-computing/platforms-and-services">Services</a> (software, data, infrastructure)</li>
+<li><a href="https://www.ucl.ac.uk/advanced-research-computing/community-events/drop-sessions">Help</a> (drop-ins, support, documentation)</li>
+<li><a href="https://www.ucl.ac.uk/advanced-research-computing/digital-research-community-events-support">Community</a> (Slack, TechSocials)</li>
+<li><a href="https://www.ucl.ac.uk/advanced-research-computing/education">Education</a></li>
+
+</ul>
+</section>
+<section id="slide-org5108429">
+<h3 id="org5108429">Open Source Programme Office</h3>
+<ul>
+<li>Advocate for Open Source</li>
+<li>Support activities (hackathons, <a href="https://github-pages.ucl.ac.uk/linux/">Linux User Group</a>)</li>
+<li>metrics</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

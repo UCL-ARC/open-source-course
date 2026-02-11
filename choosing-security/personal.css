@@ -1,0 +1,16 @@
+.small-blue {
+    color:white;
+    font-size:25px;
+    background-color: rgba(3,78,136,0.7);
+    width: 800px;
+    position: relative;
+    margin-left: 100px;
+}
+.small {
+    font-size:30px;
+}
+
+:root {
+    --r-heading1-size: 2.5em;
+    --r-code-font: Source Code Pro;
+}
