@@ -1,0 +1,3 @@
+Set of notes about Open Source usage and development
+
+- [[file:choosing-security/index.org][choosing-security]]
