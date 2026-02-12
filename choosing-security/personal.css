@@ -14,3 +14,7 @@
     --r-heading1-size: 2.5em;
     --r-code-font: Source Code Pro;
 }
+
+.fa-brands {
+    color: #9E7ED2 !important;
+}
