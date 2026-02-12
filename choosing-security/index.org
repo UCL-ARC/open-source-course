@@ -12,6 +12,7 @@
 #+MACRO: imglnk @@html:<a href="$1"><img width="400px" src="$2"></a>@@
 #+EXCLUDE_TAGS: hide
 #+REVEAL_THEME: dracula
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 * Choosing (Open Source) tools
 
 🔬 Joanna needs to analyse some images from a microscope in her lab.
@@ -21,7 +22,9 @@ She finds five different tools that provide the features she needs for her analy
 
 ** Are you allowed to use it? (Licence)
 
+#+begin_quote
 Publicly available code doesn't mean you are allowed to use it.
+#+end_quote
 
 #+BEGIN_NOTES
 copyright doesn't allow you to copy an unlicensed work, and therefore, running it 
@@ -41,7 +44,7 @@ copyright doesn't allow you to copy an unlicensed work, and therefore, running i
 
 ** Can you use it? (Requirements)
 
-- Operating System (e.g., only available on Android)
+- Operating System (@@html:<i class="fa-brands fa-android"></i><i class="fa-brands fa-apple"></i><i class="fa-brands fa-windows"></i><i class="fa-brands fa-linux"></i>@@)
 - Hardware requirements (e.g., needs a GPU)
 - Installation permissions (e.g., on a university administrated machine)
 - You have the required dependencies
@@ -139,6 +142,13 @@ coverage: R/all-equal.R
 
 ** Open Source Programme Office
 
-- Advocate for Open Source
+- Advocate for [[https://github-pages.ucl.ac.uk/open-source/][Open Source]]
 - Support activities (hackathons, [[https://github-pages.ucl.ac.uk/linux/][Linux User Group]])
 - metrics
+
+* What questions do you have?
+
+#+ATTR_HTML: :width 300px
+[[file:qr-url.png]]
+
+#+REVEAL_HTML: <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
