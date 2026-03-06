@@ -1,3 +1,5 @@
 Set of notes about Open Source usage and development
 
 - [[file:choosing-security/index.org][choosing-security]]
+- [[file:linux/index.org][Linux]]
+- [[file:at-ucl/index.org][Using Linux at UCL]]
