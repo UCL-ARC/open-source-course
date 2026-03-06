@@ -1,0 +1,50 @@
+#+COMMENT: (setq org-reveal-ignore-speaker-notes t)
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_EXTRA_CSS: personal.css
+#+REVEAL_MARGIN: -100
+#+REVEAL_MIN_SCALE: 0.1
+#+REVEAL_MAX_SCALE: 2.0
+#+REVEAL_HEADING1_SIZE: 10
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1><h5>%s</h5>
+#+Title: Getting paid with Open Source
+#+subtitle: @@html:<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>@@
+#+Email: @dpshelio
+#+OPTIONS: toc:nil num:0 timestamp:nil
+#+MACRO: imglnk @@html:<a href="$1"><img height="150px" src="$2"></a>@@
+#+EXCLUDE_TAGS: hide
+#+REVEAL_THEME: dracula
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+** Summer of Code programmes
+
+*** Google's
+
+#+ATTR_HTML: :width 100px
+https://summerofcode.withgoogle.com/assets/media/logo-sun.svg
+
+Google Summer of Code (GSoC) is an online, international program designed to encourage new contributors to participate in open source software development under the guidance of mentors from the open source community.
+
+**** Goals
+- New contributors
+- Help projects bring in new developers
+- Real-world experience
+
+**** 🤑
+
+| project size | Money  |
+|--------------+--------|
+| 90 h         | £1,500 |
+| 175 h        | £3,000 |
+| 350 h        | £6,000 |
+
+**** Mentors at UCL
+
+{{{imglnk(https://summerofcode.withgoogle.com/programs/2026/organizations/openastronomy,https://summerofcode.withgoogle.com/media/org/openastronomy/3wvadxwxjc2arepg-360.png)}}}
+{{{imglnk(https://summerofcode.withgoogle.com/programs/2026/organizations/neuroinformatics-unit,https://summerofcode.withgoogle.com/media/org/neuroinformatics-unit/ebzgcbxkxvbe9igk.png)}}}
+{{{imglnk(https://summerofcode.withgoogle.com/programs/2026/organizations/incf,https://summerofcode.withgoogle.com/media/org/incf/gnryoa8kunjogh9a-360.png)}}}
+
+{{{imglnk(https://summerofcode.withgoogle.com/programs/2026/organizations/numfocus, https://summerofcode.withgoogle.com/media/org/numfocus/wimcwc2v6kjlidqc-360.png)}}}
+{{{imglnk(https://summerofcode.withgoogle.com/programs/2026/organizations/cern-hsf, https://summerofcode.withgoogle.com/media/org/cern-hsf/cjus658sjzba5zhg-360.png)}}}
+
+
