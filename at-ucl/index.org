@@ -1,0 +1,58 @@
+#+COMMENT: (setq org-reveal-ignore-speaker-notes t)
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_EXTRA_CSS: personal.css
+#+REVEAL_MARGIN: -100
+#+REVEAL_MIN_SCALE: 0.1
+#+REVEAL_MAX_SCALE: 2.0
+#+REVEAL_HEADING1_SIZE: 10
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1><h5>%s</h5>
+#+Title: Interacting with Linux at UCL
+#+subtitle: @@html:<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>@@
+#+Email: @dpshelio
+#+OPTIONS: toc:nil num:0 timestamp:nil
+#+MACRO: imglnk @@html:<a href="$1"><img width="100px" src="$2"></a>@@
+#+EXCLUDE_TAGS: hide
+#+REVEAL_THEME: dracula
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+** Communications
+
+{{{imglnk(, https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg/250px-Microsoft_Office_Teams_%282025%E2%80%93present%29.svg.png)}}}
+{{{imglnk(,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png)}}}
+
+
+{{{imglnk("",https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg/330px-Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg.png)}}}
+{{{imglnk(,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png)}}}
+{{{imglnk(,https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thunderbird_2023_icon.png/250px-Thunderbird_2023_icon.png)}}}
+
+([[https://blog.thunderbird.net/2025/11/thunderbird-adds-native-microsoft-exchange-email-support/][Exchange in Thunderbird how to]])
+
+📆 - @@html:<i class="fa-brands fa-firefox"></i>@@
+
+[[https://ferdium.org/_next/static/media/logo.9fc5c374.png][Ferdium]] all in one
+
+*** Documents
+
+#+ATTR_HTML: :width 300px
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LibreOffice_Logo_Flat.svg/330px-LibreOffice_Logo_Flat.svg.png]]
+
+{{{imglnk("",https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Microsoft_OneDrive_Icon_%282025_-_present%29.svg/330px-Microsoft_OneDrive_Icon_%282025_-_present%29.svg.png)}}}
+{{{imglnk(,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png)}}}
+
+#+ATTR_HTML: :width 300px
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rclone_wide_logo.svg/330px-Rclone_wide_logo.svg.png]]
+
+
+
+*** Printing
+
+🖨️ - Samba or lpd ✨
+
+*** Connecting to UCL network externally
+
+#+ATTR_HTML: :width 100px
+https://images.icon-icons.com/1381/PNG/512/ciscoanyconnect_93942.png
+
+🧦 SSH + Socks
+
