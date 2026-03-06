@@ -1,0 +1,127 @@
+#+COMMENT: (setq org-reveal-ignore-speaker-notes t)
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_EXTRA_CSS: personal.css
+#+REVEAL_MARGIN: -100
+#+REVEAL_MIN_SCALE: 0.1
+#+REVEAL_MAX_SCALE: 2.0
+#+REVEAL_HEADING1_SIZE: 10
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1><h5>%s</h5>
+#+Title: Linux
+#+subtitle: @@html:<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>@@
+#+Email: @dpshelio
+#+OPTIONS: toc:nil num:0 timestamp:nil
+#+MACRO: imglnk @@html:<a href="$1"><img width="100px" src="$2"></a>@@
+#+EXCLUDE_TAGS: hide
+#+REVEAL_THEME: dracula
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+** What's Linux? @@html:<i class="fa-brands fa-linux"></i>@@
+
+- Linux is an Operating System (like @@html: <i class="fa-brands fa-windows"></i>, <i class="fa-brands fa-apple"></i>, <i class="fa-brands fa-android"></i>@@)
+    - Unix-like (@@html:<i class="fa-brands fa-apple"></i>@@)
+    - Multiple platforms: x86 (pc), ARM (raspberry pi), ...
+    - @@html:<i class="fa-brands fa-android"></i>@@ Android is based on Linux
+- Created by [[https://en.wikipedia.org/wiki/Linus_Torvalds][Linus Torvalds]] in 1991
+- Open Source since the beginning (Use, Study, Share, Modify)
+
+
+** Why would I like to use Linux?
+
+- Freedom - Software Libre, you can customise it as you like
+- Resources - Can run it on old hardware
+- Learning - You can study how it's built
+- Employability - It runs the internet and HPCs
+- Money - It's free
+
+
+* How does it look? 🎨
+
+** ‎
+#+ATTR_HTML: :width 900px
+https://nmap.org/movies/matrix/trinity-nmapscreen-hd-crop-1200x728.jpg
+@@html:<figcaption>From <a href="https://nmap.org/movies/#matrix">Movies featuring nmap</a></figcaption>@@
+
+** ‎
+#+ATTR_HTML: :width 900px
+https://fosspost.org/wp-content/uploads/2020/03/windows-xp-look-linux.jpeg
+@@html: <figcaption>From <a href="https://fosspost.org/7-reasons-to-switch-to-linux-from-windows">7 reasons to swtich to linux from Windows</a></figcaption>@@
+
+** ‎
+#+ATTR_HTML: :width 900px
+https://www.zdnet.com/a/img/resize/f0b1a5ae6bfbf58526f1e20d42ac6dafe6729476/2022/09/26/a081a3ab-7478-4b53-ba9f-59ce9906829c/xerolinux1.jpg?auto=webp&width=1200
+@@html:<figcaption>From <a href="https://www.zdnet.com/article/xerolinux-makes-a-strong-case-for-the-most-beautiful-linux-desktop-on-the-market/">XeroLinux could be the most beautiful Linux desktop on the market </a></figcaption>@@
+
+** ‎
+#+ATTR_HTML: :width 900px
+https://res.cloudinary.com/kanger/image/upload/v1674545138/Linux/Distros/Light%20Weight/Crunchbangplusplus_ybeh5v.png
+@@html:    <figcaption>From <a href="https://crunchbangplusplus.org/">#!++</a></figcaption>@@
+
+* Flavours 😋
+
+#+ATTR_HTML: :width 400px
+https://upload.wikimedia.org/wikipedia/commons/5/55/2024_Linux_Distributions_Timeline.png
+
+** Flavours 😋 - what are them?
+- Distributions (Distros)
+- Installation of programmes
+- Some generalists, others domain specific (pre-installed software)
+
+#+ATTR_HTML: :width 400px
+https://api.binarycoffee.dev/uploads/Linux_distro_logos_and_Tux_8f832d7cbc.png
+@@html: <figcaption>From <a href="https://binarycoffee.dev/post/por-que-usar-linux-10-distribuciones-recomendadas-para-todos-los-usuariosougyn">Por qué usar Linux: 10 distribuciones recomendadas para todos los usuarios</a></figcaption>@@
+
+** Flavours 😋 - How to choose?
+- Community size
+    - Support
+    - Pre-packaged software
+- expertise
+- adventurous
+
+** Flavours 😋 - Levels
+
+#+ATTR_HTML: :width 900px
+https://i.redd.it/ps4v1vipfyc71.png
+@@html: <figcaption>From <a href="https://www.reddit.com/r/linuxmasterrace/comments/oq18f7/anthonys_list_of_linux_distros_by_difficulty/">Anthony's list of Linux distros by difficulty</a></figcaption>@@
+
+* How to start?
+
+- On the web - [[https://distrosea.com/][distrosea]]
+- Virtual Machine
+- Livedistro (USB)
+- Installed (single or dual-boot)
+- @@html:<i class="fa-brands fa-windows"></i>@@ Windows Subsystem for Linux
+
+
+** Let's do it!
+
+1. [[https://distrowatch.com/][Download a linux copy (iso file)]] 💿
+
+*** Virtual Machines
+
+2. Download a Virtual Machine software (VirtualBox, QEMU, VMWare)
+3. Load the iso file :cd:
+4. Decide how much resources you want to give (disk size, RAM)
+5. Follow the installation instructions
+
+*** Live Distro
+
+2. Download [[https://www.ventoy.net/][ventoy]]
+3. Install ventoy into a blank USB pendrive
+4. Copy the iso file 💿 in ventoy's USB pendrive
+5. Restart the computer with the USB in
+6. Press =F10=, =F1=, =F2=, =enter=, ... to choose to boot from the USB
+7. Enjoy
+
+*** Installed
+
+- make a backup of your system
+8. Follow the install menu
+9. Decide how to partition the disk
+10. Reboot after the installation has finished
+11. Select linux from the menu
+12. Enjoy
+
+*** Disclaimer
+
+Installing Linux is trivial on most hardware these days, but please note:
+Whether you install Linux today on your hardware remains your choice. We will provide information and do our best to guide you through the installation if you choose to go ahead. We cannot be held responsible for any loss of data or other device failures.
