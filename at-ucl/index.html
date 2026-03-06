@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Interacting with Linux at UCL</title>
+<meta name="author" content="David Pérez-Suárez"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/dracula.css" id="theme"/>
+
+<link rel="stylesheet" href="personal.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>Interacting with Linux at UCL</h1><h5><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a></h5>
+</section>
+<section>
+<section id="slide-orgfccced1">
+<h2 id="orgfccced1">Communications</h2>
+<p>
+<a href=""><img width="100px" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg/250px-Microsoft_Office_Teams_%282025%E2%80%93present%29.svg.png"></a>
+<a href=""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png"></a>
+</p>
+
+
+<p>
+<a href=""""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg/330px-Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg.png"></a>
+<a href=""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png"></a>
+<a href=""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thunderbird_2023_icon.png/250px-Thunderbird_2023_icon.png"></a>
+</p>
+
+<p>
+(<a href="https://blog.thunderbird.net/2025/11/thunderbird-adds-native-microsoft-exchange-email-support/">Exchange in Thunderbird how to</a>)
+</p>
+
+<p>
+📆 - <i class="fa-brands fa-firefox"></i>
+</p>
+
+<p>
+<a href="https://ferdium.org/_next/static/media/logo.9fc5c374.png">Ferdium</a> all in one
+</p>
+</section>
+<section id="slide-orgbb42866">
+<h3 id="orgbb42866">Printing</h3>
+<p>
+🖨️ - Samba or lpd ✨
+</p>
+</section>
+<section id="slide-orgd87e76f">
+<h3 id="orgd87e76f">Connecting to UCL network externally</h3>
+
+<div id="org6475c82" class="figure">
+<p><img src="https://images.icon-icons.com/1381/PNG/512/ciscoanyconnect_93942.png" alt="ciscoanyconnect_93942.png" width="100px" />
+</p>
+</div>
+
+<p>
+🧦 SSH + Socks
+</p>
+</section>
+<section id="slide-org9464fc6">
+<h3 id="org9464fc6">Documents</h3>
+
+<div id="orgf6bee48" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LibreOffice_Logo_Flat.svg/330px-LibreOffice_Logo_Flat.svg.png" alt="330px-LibreOffice_Logo_Flat.svg.png" width="300px" />
+</p>
+</div>
+
+<p>
+<a href=""""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Microsoft_OneDrive_Icon_%282025_-_present%29.svg/330px-Microsoft_OneDrive_Icon_%282025_-_present%29.svg.png"></a>
+<a href=""><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/250px-Firefox_logo%2C_2019.svg.png"></a>
+</p>
+
+
+<div id="org7e41108" class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rclone_wide_logo.svg/330px-Rclone_wide_logo.svg.png" alt="330px-Rclone_wide_logo.svg.png" width="300px" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
