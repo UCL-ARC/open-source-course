@@ -61,7 +61,7 @@ https://res.cloudinary.com/kanger/image/upload/v1674545138/Linux/Distros/Light%2
 #+ATTR_HTML: :width 400px
 https://upload.wikimedia.org/wikipedia/commons/5/55/2024_Linux_Distributions_Timeline.png
 
-** Flavours 😋 - what are them?
+** Flavours 😋 - what are they?
 - Distributions (Distros)
 - Installation of programmes
 - Some generalists, others domain specific (pre-installed software)
